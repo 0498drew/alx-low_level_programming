@@ -1,0 +1,61 @@
+diff --git a/0x01-variables_if_else_while/.2-print_alphabet.c.swg b/0x01-variables_if_else_while/.2-print_alphabet.c.swg
+new file mode 100644
+index 0000000..eb8fc99
+Binary files /dev/null and b/0x01-variables_if_else_while/.2-print_alphabet.c.swg differ
+diff --git a/0x01-variables_if_else_while/.2-print_alphabet.c.swh b/0x01-variables_if_else_while/.2-print_alphabet.c.swh
+new file mode 100644
+index 0000000..0388345
+Binary files /dev/null and b/0x01-variables_if_else_while/.2-print_alphabet.c.swh differ
+diff --git a/0x01-variables_if_else_while/.6-print_numberz.c.swp b/0x01-variables_if_else_while/.6-print_numberz.c.swp
+new file mode 100644
+index 0000000..f38eb4f
+Binary files /dev/null and b/0x01-variables_if_else_while/.6-print_numberz.c.swp differ
+diff --git a/0x01-variables_if_else_while/2-print_alphabet.c b/0x01-variables_if_else_while/2-print_alphabet.c
+index 9b5b564..1a5e796 100755
+--- a/0x01-variables_if_else_while/2-print_alphabet.c
++++ b/0x01-variables_if_else_while/2-print_alphabet.c
+@@ -2,9 +2,10 @@
+ #include <stdlib.h>
+ 
+ /**
+- * main - Entry point
+- *   
+- * Return: 0     
++ * main - Entry point  
++ * print_alphabet_x10 - print alphabet 10 times 
++ * 
++ * Return: void  
+  */
+ int main(void)
+ {
+diff --git a/0x01-variables_if_else_while/6-print_numberz.c b/0x01-variables_if_else_while/6-print_numberz.c
+new file mode 100644
+index 0000000..3d7b401
+--- /dev/null
++++ b/0x01-variables_if_else_while/6-print_numberz.c
+@@ -0,0 +1,19 @@
++#include <stdio.h>
++
++/**
++ * main - Entry point
++ *
++ * Return: 0
++ */
++int main(void)
++{
++	int i = 48;
++
++	while (i < 58)		
++	{			
++		putchar(i);	
++		i++;					
++	}		
++	putchar('\n');	
++	return (0);
++}
+diff --git a/0x01-variables_if_else_while/a.out b/0x01-variables_if_else_while/a.out
+index 5057485..03a76b0 100755
+Binary files a/0x01-variables_if_else_while/a.out and b/0x01-variables_if_else_while/a.out differ
+diff --git a/0x01-variables_if_else_while/stage.diff b/0x01-variables_if_else_while/stage.diff
+new file mode 100644
+index 0000000..e69de29
