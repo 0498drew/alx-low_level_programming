@@ -1,7 +1,7 @@
 #include <stdio.h>
 
 /**
- *  * main - Entry point
+ * main - Entry point
  *
  * Return: 0
  */
@@ -11,6 +11,6 @@ int main(void)
 
 	for (a = 0; a < 10; a++)
 		printf("%i", a);
-	printf("\n")
+	printf("\n");
 	return (0);
 }
