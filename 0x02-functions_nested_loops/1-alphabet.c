@@ -1,18 +1,28 @@
 #include "main.h"
 
 /**
- * print_alphabet - print alphabet of letters
+ * print_alphabet_x10 - print alphabet
  *
- * Return: void
+ * Return: Always 0.
  */
-
-void print_alphabet(void)
+void print_alphabet_x10(void)
 {
-	int i;
-	for (i = 'a'; i <= 'z'; i++)
-	
+	int alphabet;
+	int count;
+
+
+	count = 0;
+	while (count < 10)
 	{
-		_putchar(i);
+		for (alphabet = 'a' ; alphabet <= 'z'; alphabet++)
+		{
+			_putchar(alphabet);
+		}
+
+		count++;
+		_putchar('\n');
 	}
-	_putchar('\n');	
+
+
 }
+
