@@ -1,25 +1,23 @@
 #include "main.h"
-
+#include <stdio.h>
 /**
- * print_alphabet_x10 - print alphabet
- *
+ * print_to_98 - print all natural numbers from n to 98.
+ * @n: the number to start counting from n to 98
  * Return: Always 0.
  */
-void print_alphabet_x10(void)
+void print_to_98(int n)
 {
-	int alphabet;
-	int count;
-
-	count = 0;
-	while (count < 10)
+	if (n < 98)
 	{
-		for (alphabet = 'a' ; alphabet <= 'z'; alphabet++)
-		{
-			_putchar(alphabet);
-		}
-
-		count++;
-		_putchar('\n');
+		for (n = n; n < 98; n++)
+			printf("%d, ", n);
+		printf("%d\n", 98);
 	}
-
+	else
+	{
+		for (n = n; n > 98; n--)
+			printf("%d, ", n);
+		printf("%d\n", 98);
+	}
 }
+
