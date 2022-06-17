@@ -1,7 +1,8 @@
 #include "main.h"
 #include <stdio.h>
 
-/** * isPrintableASCII - determines if n is a printable ASCII char
+/**
+ * isPrintableASCII - determines if n is a printable ASCII char
  * @n: integer
  * Return: 1 if true, 0 if false
  */
@@ -29,8 +30,9 @@ void printHexes(char *b, int start, int end)
 			printf("  ");
 		if (i % 2)
 			printf(" ");
-		i++;	
+		i++;
 	}
+}
 
 /**
  * printASCII - print ascii values for string b,
@@ -39,7 +41,6 @@ void printHexes(char *b, int start, int end)
  * @start: starting position
  * @end: ending position
  */
-
 void printASCII(char *b, int start, int end)
 {
 	int ch, i = 0;
@@ -59,23 +60,19 @@ void printASCII(char *b, int start, int end)
  * @b: string
  * @size: size of buffer
  */
-
 void print_buffer(char *b, int size)
 {
 	int start, end;
 
 	if (size > 0)
 	{
-	
 		for (start = 0; start < size; start += 10)
 		{
 			end = (size - start < 10) ? size - start : 10;
 			printf("%08x: ", start);
 			printHexes(b, start, end);
 			printASCII(b, start, end);
-			printf("\n");
 		}
-		else
-	}
+	}else
 		printf("\n");
 }
