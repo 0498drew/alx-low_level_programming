@@ -1,7 +1,5 @@
-The line of life is a ragged diagonal between duty and desire
+6 Chess is mental torture
 mandatory
-Write a function that prints the sum of the two diagonals of a square matrix of integers
+Write a function that prints the chessboard
 
-Prototype: void print_diagsums(int *a, int size);
-Format: see example
-You are allowed to use the standard library
+Prototype: void print_chessboard(char (*a)[8])
