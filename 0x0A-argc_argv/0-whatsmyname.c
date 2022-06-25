@@ -1,15 +1,13 @@
 #include <stdio.h>
-#include "main.h"
-
+#include <stdlib.h>
 /**
- * main - Print the name of the program
- * @argc: Count arguments
- * @argv: Arguments
+ * main - print the name of the executable.
+ * @argc: argument count or size of arguments.
+ * @argv: argument vector
  *
- * Return: Always 0 (Success)
+ * Return: always 0.
  */
-
-Lint main(int argc __attribute__((unused)), char **argv)
+int main(int argc __attribute__((unused)), char **argv)
 {
 	printf("%s\n", *argv);
 	return (0);
