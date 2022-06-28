@@ -1,5 +1,4 @@
 #include "main.h"
-
 /**
  *_strlen - count arrray
  *@s: array of elements
@@ -11,14 +10,11 @@ int _strlen(char *s)
 	unsigned int i;
 
 	i = 0;
-	while (s[i] != '\0')
-	/*Count character of string*/
+	while (s[i] != '\0') /*Count character of string*/
 	{
 		i++;
 	}
-
 	return (i);
-
 }
 
 /**
@@ -36,7 +32,7 @@ char *str_concat(char *s1, char *s2)
 	/*If the array is empty*/
 	if (s1 == NULL)
 		s1 = "";
-	
+
 	if (s2 == NULL)
 		s2 = "";
 
@@ -47,19 +43,23 @@ char *str_concat(char *s1, char *s2)
 	dst = (char *) malloc(size * sizeof(char));
 
 	if (dst == 0)
-	{
+	{		
 		return (NULL);
 	}
 
+			
 	/*Concatenate arrays*/
 	for (i = 0; *(s1 + i) != '\0'; i++)
-		*(dst + i) = *(s1 + i);
-	for (j = 0; *(s2 + j) != '\0'; j++)
-	{
-		*(dst + i) = *(s2 + j);
-		i++;
-	}
 
+		*(dst + i) = *(s1 + i);
+
+				
+	for (j = 0; *(s2 + j) != '\0'; j++)
+												{
+															*(dst + i) = *(s2 + j);
+															i++;																	
+												}
+		
 	return (dst);
 }
 
