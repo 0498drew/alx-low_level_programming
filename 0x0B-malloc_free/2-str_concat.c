@@ -43,25 +43,23 @@ char *str_concat(char *s1, char *s2)
 	dst = (char *) malloc(size * sizeof(char));
 
 	if (dst == 0)
-	{		
+	{
 		return (NULL);
 	}
 
-			
 	/*Concatenate arrays*/
 	for (i = 0; *(s1 + i) != '\0'; i++)
-
 		*(dst + i) = *(s1 + i);
 
-				
 	for (j = 0; *(s2 + j) != '\0'; j++)
-												{
-															*(dst + i) = *(s2 + j);
-															i++;																	
-												}
-		
+	{
+		*(dst + i) = *(s2 + j);
+		i++;
+	}
+
 	return (dst);
 }
+
 
 
 
