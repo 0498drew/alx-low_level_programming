@@ -1,4 +1,4 @@
-nclude "dog.h"
+#include "dog.h"
 #define NULL (void *)0
 
 /**
